@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="stylemainpage.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Adulrahman !</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Game Suggester </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="w-75"></div>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cours">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mosah">About me</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+    <!--Title Middle-->
+    <div class="titl">
+    <div class="container pt-5"></div>
+      <div class="jumbotron text-center">
+        <h1>Game Suggester </h1>
+        <h4>Web developer</h4>
+        <a href="#" class="btn btn-dark btn-lg">Next</a>
+        <a href="#" class="btn btn-outline-dark btn-lg">prev</a>
+      </div>
+    </div>
+    
+<hr style="margin-bottom: 2cm">
+<div class="flsfah">
+  <div class="container">
+    <div class="row text-center align-self-start"><h2><strong>  Browse all Services available</strong> </h2></div>
+  </div>
+</div>
+
+
+
+      <!--cardes-->
+      <div class="comp pt-5" id="cours">
+        <div class="container">
+          <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;"><!--Card 1-->
+              <img class="card-img-top" src="../static/images/game-control.png"  th:src="@{images/game-control.png}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Search</h5>
+                <p class="card-text">!</p>
+                <a th:href="@{/search}" class="btn btn-dark">Let's Go!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;"><!--Card 2-->
+              <img class="card-img-top" src="../static/images/game-development.png"  th:src="@{images/game-development.png}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Random</h5>
+                <p class="card-text">; ;<br></p>
+           
+                  <div id="mss"></div>
+                <a th:href="@{/random}" class="btn btn-dark">Let's Go!</a>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;"><!--Card 4-->
+              <img class="card-img-top" src="../static/images/gamer.png"  th:src="@{images/gamer.png}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">ِAndroid app</h5>
+                <p class="card-text">Learn to build Android applications using Android Studio</p>
+                <div id="mss"></div>
+                <a th:href="@{pageaddnew}" class="btn btn-dark">Learn more!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="endW">
+        
+
+        <div class="Cobu"><strong>&copy; Abdulrahman 2020</strong></div>
+        </div>
+      </div>
+
+
+    <!-- Optional JavaScript 
+    <div class="child">
+              <img src="instagram-sketched.png" alt="">
+              <img src="twitter.png" alt="">
+              <img src="github-image.png" alt="">
+            </div>
+          -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap.bundle.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+       var d = new Date();
+        var n = d.toLocaleTimeString();
+
+        var timme=document.getElementById('timme');
+        timme.textContent=n;
+    </script>
+</body>
+</html>
+
+  

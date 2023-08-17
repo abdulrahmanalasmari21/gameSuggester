@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta charset="windows-1256">
+<title>Random Page</title>
+</head>
+<body>
+
+<a th:href = "@{/random/randomagin}"  class = "btn btn-danger btn-sm mb-3"  style="border-radius: 0.8rem; margin: 2pc;
+  width: 20%;
+ 
+  padding: 10px;
+">Agin Random !!</a>
+<hr style="margin-bottom: 5cm;">
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<td>name</td>
+<td>type</td>
+<td>description</td>
+<td>Image </td>
+</tr>
+</thead>
+<tbody>
+	
+<tr	th:each="game: ${Randomlist}">
+	
+	<td th:text="${game.name}"></td>
+	<td th:text="${game.type}"></td>
+	<td th:text="${game.des}">	</td>
+	<td><img class='img-thumbnail' th:src="'data:image/jpeg;base64,' + ${imgUtil.getImgData(game.pic)}" />	</td>
+	
+</tr>
+
+</tbody>
+
+
+</table>
+
+
+</body>
+</html>

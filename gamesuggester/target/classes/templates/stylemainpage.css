@@ -1,0 +1,62 @@
+@charset "windows-1256";
+
+.comp{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+    
+}
+.titl h4{
+    padding-bottom: 130px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.titl h1{
+    font-family: 'Poppins', sans-serif;
+}
+#mss{
+    padding-bottom: 70px;
+}
+#mss{
+    font-family: sans-serif;
+}
+#mosah{
+    height: 100px;
+    background-color: teal;
+}
+#mosah h2{
+    padding-top: 25px;
+}
+.info li{
+    font-size: 40px;
+
+}
+.mosnha{
+    height: 40px;
+}
+.endW{
+    background-color: teal;
+}
+.endW img{
+    height: 30px;
+}
+.Cobu{
+    font-size: 30px;
+    text-align: center;
+}
+.info img{
+    
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+.titl{
+    background-image: url('macboo.jpg');
+   
+   
+}
